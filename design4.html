@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tree Landscape</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #87CEEB; /* Sky blue */
+        }
+        .landscape {
+            width: 200px;
+            height: 400px;
+            position: relative;
+        }
+        .sky {
+            width: 100%;
+            height: 60%;
+            background-color: #87CEEB; /* Sky blue */
+        }
+        .tree-top {
+            width: 100px;
+            height: 100px;
+            background-color: #32CD32; /* Lime green */
+            border-radius: 50%;
+            position: absolute;
+            top: 50px;
+            left: 50px;
+        }
+        .tree-trunk {
+            width: 20px;
+            height: 100px;
+            background-color: #8B4513; /* Saddle brown */
+            position: absolute;
+            top: 150px;
+            left: 90px;
+        }
+        .grass {
+            width: 100%;
+            height: 30%;
+            background-color: #32CD32; /* Lime green */
+            position: absolute;
+            bottom: 40px;
+        }
+        .ground {
+            width: 100%;
+            height: 10%;
+            background-color: #8B4513; /* Saddle brown */
+            position: absolute;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="landscape">
+        <div class="sky"></div>
+        <div class="tree-top"></div>
+        <div class="tree-trunk"></div>
+        <div class="grass"></div>
+        <div class="ground"></div>
+    </div>
+</body>
+</html>

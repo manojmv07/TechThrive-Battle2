@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Satellite Icon</title>
+    <style>
+        .satellite {
+            width: 200px;
+            height: 200px;
+            position: relative;
+            margin: 50px auto;
+        }
+        .body {
+            width: 80px;
+            height: 120px;
+            background-color: #333;
+            position: absolute;
+            top: 40px;
+            left: 60px;
+        }
+        .body::before {
+            content: '';
+            position: absolute;
+            width: 60px;
+            height: 100px;
+            background-color: #fff;
+            top: 10px;
+            left: 10px;
+        }
+        .antenna {
+            width: 20px;
+            height: 20px;
+            background-color: #333;
+            border-radius: 50%;
+            position: absolute;
+            top: 30px;
+            left: 90px;
+        }
+        .antenna::after {
+            content: '';
+            position: absolute;
+            width: 10px;
+            height: 30px;
+            background-color: #333;
+            top: -25px;
+            left: 5px;
+        }
+        .panel {
+            width: 60px;
+            height: 120px;
+            background-color: #333;
+            position: absolute;
+        }
+        .panel::before {
+            content: '';
+            position: absolute;
+            width: 40px;
+            height: 20px;
+            background-color: #fff;
+            top: 10px;
+            left: 10px;
+        }
+        .panel::after {
+            content: '';
+            position: absolute;
+            width: 40px;
+            height: 20px;
+            background-color: #fff;
+            bottom: 10px;
+            left: 10px;
+        }
+        .panel-left {
+            transform: skew(0deg, 10deg);
+            left: 0;
+        }
+        .panel-right {
+            transform: skew(0deg, -10deg);
+            right: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="satellite">
+        <div class="body"></div>
+        <div class="antenna"></div>
+        <div class="panel panel-left"></div>
+        <div class="panel panel-right"></div>
+    </div>
+</body>
+</html>

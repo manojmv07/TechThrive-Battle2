@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speaker Icon</title>
+    <style>
+        body {
+            background-color: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .speaker-icon {
+            width: 200px;
+            height: 200px;
+            position: relative;
+        }
+        .speaker {
+            width: 100px;
+            height: 100px;
+            background-color: #5bc0de;
+            clip-path: polygon(0 30%, 30% 30%, 60% 0, 60% 100%, 30% 70%, 0 70%);
+            position: absolute;
+            left: 0;
+            top: 50px;
+        }
+        .wave {
+            border: 10px solid #5bc0de;
+            border-radius: 50%;
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        .wave-1 {
+            width: 40px;
+            height: 80px;
+            border-left: none;
+        }
+        .wave-2 {
+            width: 70px;
+            height: 140px;
+            border-left: none;
+        }
+        .wave-3 {
+            width: 100px;
+            height: 200px;
+            border-left: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="speaker-icon">
+        <div class="speaker"></div>
+        <div class="wave wave-1"></div>
+        <div class="wave wave-2"></div>
+        <div class="wave wave-3"></div>
+    </div>
+</body>
+</html>
